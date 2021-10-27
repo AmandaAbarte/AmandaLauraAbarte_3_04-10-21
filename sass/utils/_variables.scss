@@ -2,5 +2,6 @@ $primary-colour: #9356DC;
 $secondary-colour: #FF79DA;
 $tertiary-colour: #99E2D0;
 
-$primary-colour-light: lighten($primary-colour, 30%)
+$primary-colour-light: lighten($primary-colour, 30%);
 
+$tertiary-colour-dark: darken($tertiary-colour, 40%)
