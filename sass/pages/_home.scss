@@ -11,31 +11,6 @@ body {
   }
 }
 
-nav {
-  background-color: whitesmoke;
-  display: flex;
-  justify-content: center;
-  img {
-    margin: 20px 0;
-    &:hover {
-      cursor: pointer;
-    }
-  }
-}
-
-header {
-  background-color: lightgrey;
-  .locationselector {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    i {
-      margin-right: 10px;
-    }
-  }
-}
-
 .explore {
   display: flex;
   flex-direction: column;

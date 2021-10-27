@@ -1,0 +1,11 @@
+nav {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    img {
+      margin: 20px 0;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }

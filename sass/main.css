@@ -1,17 +1,28 @@
-body {
-  margin: 0;
+header {
+  background-color: lightgrey;
 }
 
-body h2 {
-  font-family: "Shrikhand", cursive;
+header .locationselector {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
 }
 
-body h3 {
-  font-family: "Roboto", sans-serif;
+header .locationselector i {
+  margin-right: 10px;
 }
 
-body p {
-  font-family: "Roboto", sans-serif;
+header img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 nav {
@@ -32,25 +43,20 @@ nav img:hover {
   cursor: pointer;
 }
 
-header {
-  background-color: lightgrey;
+body {
+  margin: 0;
 }
 
-header .locationselector {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer;
+body h2 {
+  font-family: "Shrikhand", cursive;
 }
 
-header .locationselector i {
-  margin-right: 10px;
+body h3 {
+  font-family: "Roboto", sans-serif;
+}
+
+body p {
+  font-family: "Roboto", sans-serif;
 }
 
 .explore {
