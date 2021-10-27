@@ -85,7 +85,21 @@ header {
     }
     &-details {
       margin: 0 20px;
+      display: flex;
+      flex-direction: row;
+      &-text {
+          width: 80%;
+      }
+      i {
+          width: 20%;
+         font-size: 50px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+        
+      }
     }
+
     &:hover {
       cursor: pointer;
     }

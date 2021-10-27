@@ -127,6 +127,31 @@ header .locationselector i {
 
 .restaurants .restaurant-details {
   margin: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.restaurants .restaurant-details-text {
+  width: 80%;
+}
+
+.restaurants .restaurant-details i {
+  width: 20%;
+  font-size: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .restaurants .restaurant:hover {
