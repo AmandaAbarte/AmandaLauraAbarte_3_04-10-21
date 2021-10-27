@@ -129,6 +129,15 @@ header .locationselector i {
 
 .howitworks ol li .li-details i {
   margin: 0 25px;
+  color: gray;
+}
+
+.howitworks ol li:hover {
+  background-color: #e4d5f6;
+}
+
+.howitworks ol li:hover i {
+  color: #9356DC;
 }
 
 .restaurants {

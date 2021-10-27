@@ -84,7 +84,14 @@ header {
         top: -30px;
         i {
           margin: 0 25px;
+          color: gray;
         }
+      }
+      &:hover {
+          background-color: $primary-colour-light;
+          i {
+              color: $primary-colour;
+          }
       }
     }
   }
