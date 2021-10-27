@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+}
+
+body h2 {
+  font-family: 'Shrikhand', cursive;
+}
+
+body h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+body p {
+  font-family: 'Roboto', sans-serif;
+}
+
+nav {
+  background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav img {
+  margin: 20px 0;
+}
+
+nav img:hover {
+  cursor: pointer;
+}
+
+header {
+  background-color: lightgrey;
+}
+
+header .locationselector {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.explore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: whitesmoke;
+}
+
+.explore button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA 0%, #9356DC 100%);
+  border-width: 0;
+  border-radius: 25px;
+  padding: 0 20px;
+}
+
+.howitworks {
+  margin-left: 10px;
+}
+
+.howitworks ol li {
+  background-color: whitesmoke;
+  width: 95%;
+  text-align: center;
+  height: 40px;
+}
+
+.restaurants {
+  background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 0;
+}
+
+.restaurants .restaurant {
+  background-color: white;
+  width: 92%;
+  height: 400px;
+  margin: 20px 0;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.restaurants .restaurant-thumbnail {
+  width: 100%;
+  height: 70%;
+}
+
+.restaurants .restaurant-details {
+  margin: 0 20px;
+}
+
+.restaurants .restaurant:hover {
+  cursor: pointer;
+}
+
+footer {
+  background-color: #292929;
+  color: white;
+  padding: 20px;
+}
+
+footer img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+/*# sourceMappingURL=main.css.map */
