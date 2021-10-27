@@ -1,60 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="sass/main.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Shrikhand&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6a35fde4d1.js" crossorigin="anonymous"></script>
     <title>Oh My food</title>
 </head>
+
 <body>
+    <nav>
+        <img class="logo" src="images/logo/ohmyfood.png" alt="OhMyFood Logo" title="OhMyFood logo"
+            onclick="location.href='#';">
+    </nav>
     <header>
-        <img id="logo" src="Projet 3 - ohmyfood EN/images/logo/ohmyfood.png" alt="OhMyFood Logo" title="OhMyFood logo" onclick="location.href='#';" style="cursor: pointer;">
+        <section class="locationselector">
+            <i class="icon fas fa-map-marker-alt"></i>
+            <h3> Paris, Belleville</h3>
+        </section>
     </header>
-    <section id="locationselector">
-        <h3> Paris, Belleville</h3>
-    </section>
-    <section id="Explore">
-        <h2> Book the menu you like </h2>
-        <p> Discover top-of-the-art restaurants we picked for you </p>
-        <h3> Explore our restaurants </h3>
-    </section>
-    <section id="howitworks">
-        <h2>How it works</h2>
-        <h3>Choose a restaurant</h3>
-        <h3>Create your menu</h3>
-        <h3>Go Enjoy it at the restaurant</h3>
-    </section>
-    <section id="restaurants">
-        <div class="restaurant" onclick="location.href='html/Menu-La palette du goût.html';" style="cursor: pointer;">
-            <img src="Projet 3 - ohmyfood EN/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="The Full palette" title="The Full palette">
-            <h2>The Full Palette</h2>
-            <p>New York</p>
-        </div>
-        <div class="restaurant" onclick="location.href='html/Menu-La note enchantée.html';" style="cursor: pointer;">
-            <img src="Projet 3 - ohmyfood EN/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="The Enchanted Plate" title="The Enchanted Plate">
-            <h2>The Enchanted Plate</h2>
-            <p>New York</p>
-        </div>
-        <div class="restaurant" onclick="location.href='html/Menu-À la française.html';" style="cursor: pointer;">
-            <img src="Projet 3 - ohmyfood EN/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Bastille" title="Bastille">
-            <h2>Bastille</h2>
-            <p>New York</p>
-        </div>
-        <div class="restaurant" onclick="location.href='html/Menu-Le délice des sens.html';" style="cursor: pointer;">
-            <img src="Projet 3 - ohmyfood EN/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le Gourmand" title="Le Gourmand">
-            <h2>Le Gourmand</h2>
-            <p>New York</p>
-        </div>
-    </section>
+    <main>
+        <section class="explore">
+            <h2> Book the menu you like </h2>
+            <p> Discover top-of-the-art restaurants we picked for you </p>
+            <button>
+                <h3> Explore our restaurants </h3>
+            </button>
+        </section>
+        <section class="howitworks">
+            <ol>
+                <h2>How it works</h2>
+                <li>
+                    <div class="li-details">
+                        <i class="icon fas fa-mobile-alt"></i>
+                        <h3>Choose a restaurant</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="li-details">
+                        <i class="icon fas fa-list-ul"></i>
+                        <h3>Create your menu</h3>
+                    </div>
+                </li>
+                <li>
+                    <div class="li-details">
+                        <i class="fas fa-store"></i>
+                        <h3>Go Enjoy it at the restaurant</h3>
+                    </div>
+                </li>
+            </ol>
+        </section>
+        <section class="restaurants">
+            <h2>Restaurants</h2>
+            <div class="restaurant" onclick="location.href='html/Menu-La palette du goût.html';">
+                <img class="restaurant-thumbnail" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                    alt="The Full palette" title="The Full palette">
+                <div class="restaurant-details">
+                    <div class="restaurant-details-text">
+                        <h2>The Full Palette</h2>
+                        <p>New York</p>
+                    </div>
+                    <i class="icon far fa-heart"></i>
+                </div>
+            </div>
+            <div class="restaurant" onclick="location.href='html/Menu-La note enchantée.html';">
+                <img class="restaurant-thumbnail" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                    alt="The Enchanted Plate" title="The Enchanted Plate">
+                <div class="restaurant-details">
+                    <div class="restaurant-details-text">
+                        <h2>The Enchanted Plate</h2>
+                        <p>New York</p>
+                    </div>
+                    <i class="icon far fa-heart"></i>
+                </div>
+            </div>
+            <div class="restaurant" onclick="location.href='html/Menu-À la française.html';">
+                <img class="restaurant-thumbnail" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                    alt="Bastille" title="Bastille">
+                <div class="restaurant-details">
+                    <div class="restaurant-details-text">
+                        <h2>Bastille</h2>
+                        <p>New York</p>
+                    </div>
+                    <i class="icon far fa-heart"></i>
+                </div>
+            </div>
+            <div class="restaurant" onclick="location.href='html/Menu-Le délice des sens.html';">
+                <img class="restaurant-thumbnail"
+                    src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le Gourmand"
+                    title="Le Gourmand">
+                <div class="restaurant-details">
+                    <div class="restaurant-details-text">
+                        <h2>Le Gourmand</h2>
+                        <p>New York</p>
+                    </div>
+                    <i class="icon far fa-heart"></i>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer>
-        <img id="logo" src="Projet 3 - ohmyfood EN/images/logo/ohmyfood@2x.svg" alt="OhMyFood Logo" title="OhMyFood logo">
+        <img class="logo" src="images/logo/ohmyfood@2x.svg" alt="OhMyFood Logo" title="OhMyFood logo">
         <ul>
-            <li onclick="location.href='#';" style="cursor: pointer;">Suggest a restaurant</li>
-            <li onclick="location.href='#';" style="cursor: pointer;">Become a partner</li>
-            <li onclick="location.href='#';" style="cursor: pointer;">Legal</li>
-            <li onclick="location.href='#';" style="cursor: pointer;">Contact</li>
+            <li onclick="location.href='#';">Suggest a restaurant</li>
+            <li onclick="location.href='#';">Become a partner</li>
+            <li onclick="location.href='#';">Legal</li>
+            <li onclick="location.href='#';">Contact</li>
         </ul>
     </footer>
 </body>
+
 </html>
