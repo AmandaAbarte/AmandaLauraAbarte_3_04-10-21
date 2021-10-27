@@ -64,11 +64,13 @@ header .locationselector i {
       -ms-flex-align: center;
           align-items: center;
   background-color: whitesmoke;
+  padding: 30px 0 50px;
 }
 
 .explore button {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA 0%, #9356DC 100%);
+  color: white;
   border-width: 0;
   border-radius: 25px;
   padding: 0 20px;
@@ -114,7 +116,7 @@ header .locationselector i {
 .restaurants .restaurant {
   background-color: white;
   width: 92%;
-  height: 400px;
+  height: 350px;
   margin: 20px 0;
   border-radius: 20px;
   overflow: hidden;
