@@ -53,9 +53,16 @@ header {
   ol {
     li {
       background-color: whitesmoke;
-      width: 95%;
-      text-align: center;
-      height: 40px;
+      width: 90%;
+      height: 60px;
+      margin: 20px;
+      .li-details {
+          display: flex;
+          align-items: center;
+          i {
+              margin: 0 25px;
+          }
+      }
     }
   }
 }
