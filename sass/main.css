@@ -207,13 +207,28 @@ header .locationselector i {
 }
 
 footer {
+  font-family: "Roboto", sans-serif;
   background-color: #292929;
   color: white;
-  padding: 20px;
+  padding: 15px;
 }
 
 footer img {
+  margin: 20px 0 0 25px;
   -webkit-filter: invert(1);
           filter: invert(1);
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  margin: 15px 0;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */

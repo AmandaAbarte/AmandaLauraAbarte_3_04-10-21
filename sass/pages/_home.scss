@@ -47,7 +47,7 @@ header {
     border-width: 0;
     border-radius: 25px;
     padding: 0 20px;
-    @include element-shadow
+    @include element-shadow;
   }
 }
 .howitworks {
@@ -62,7 +62,7 @@ header {
       height: 60px;
       margin: 20px;
       border-radius: 25px;
-      @include element-shadow
+      @include element-shadow;
       &::before {
         content: counter(li);
         counter-increment: li;
@@ -90,10 +90,10 @@ header {
         }
       }
       &:hover {
-          background-color: $primary-colour-light;
-          i {
-              color: $primary-colour;
-          }
+        background-color: $primary-colour-light;
+        i {
+          color: $primary-colour;
+        }
       }
     }
   }
@@ -111,7 +111,7 @@ header {
     margin: 20px 0;
     border-radius: 20px;
     overflow: hidden;
-    @include element-shadow
+    @include element-shadow;
     &-thumbnail {
       width: 100%;
       height: 70%;
@@ -138,10 +138,22 @@ header {
 }
 
 footer {
+  font-family: "Roboto", sans-serif;
   background-color: rgb(41, 41, 41);
   color: white;
-  padding: 20px;
+  padding: 15px;
   img {
+    margin: 20px 0 0 25px;
     filter: invert(1);
+  }
+  ul {
+    list-style: none;
+    li {
+      margin: 15px 0;
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
   }
 }
