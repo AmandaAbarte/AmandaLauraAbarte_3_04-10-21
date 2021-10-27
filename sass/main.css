@@ -80,11 +80,39 @@ header .locationselector i {
   margin-left: 10px;
 }
 
+.howitworks ol {
+  list-style: none;
+  counter-reset: li;
+}
+
 .howitworks ol li {
   background-color: whitesmoke;
   width: 90%;
   height: 60px;
   margin: 20px;
+  border-radius: 25px;
+}
+
+.howitworks ol li::before {
+  content: counter(li);
+  counter-increment: li;
+  background: #9356DC;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: 15px;
+  left: -15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
 }
 
 .howitworks ol li .li-details {
@@ -94,6 +122,9 @@ header .locationselector i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 20px;
+  position: relative;
+  top: -30px;
 }
 
 .howitworks ol li .li-details i {
