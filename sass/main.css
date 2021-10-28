@@ -1,3 +1,15 @@
+html h2 {
+  font-family: "Shrikhand", cursive;
+}
+
+html h3 {
+  font-family: "Roboto", sans-serif;
+}
+
+html p {
+  font-family: "Roboto", sans-serif;
+}
+
 header {
   background-color: lightgrey;
 }
@@ -36,27 +48,22 @@ nav {
 }
 
 nav img {
-  margin: 20px 0;
+  width: 50%;
+  margin: 20px 15%;
 }
 
 nav img:hover {
   cursor: pointer;
 }
 
+nav i {
+  font-size: 40px;
+  margin: 30px 0 20px 50px;
+  color: grey;
+}
+
 body {
   margin: 0;
-}
-
-body h2 {
-  font-family: "Shrikhand", cursive;
-}
-
-body h3 {
-  font-family: "Roboto", sans-serif;
-}
-
-body p {
-  font-family: "Roboto", sans-serif;
 }
 
 .explore {
