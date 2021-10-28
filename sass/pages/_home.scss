@@ -19,12 +19,17 @@ body {
     cursor: pointer;
   }
 }
+
 .howitworks {
   margin-left: 10px;
 
   ol {
     list-style: none;
     counter-reset: li;
+    padding-left: 0;
+    h2 {
+      margin-left: 20px;
+    }
     li {
       background-color: whitesmoke;
       width: 90%;

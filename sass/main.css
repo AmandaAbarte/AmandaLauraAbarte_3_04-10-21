@@ -100,6 +100,11 @@ body {
 .howitworks ol {
   list-style: none;
   counter-reset: li;
+  padding-left: 0;
+}
+
+.howitworks ol h2 {
+  margin-left: 20px;
 }
 
 .howitworks ol li {
