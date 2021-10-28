@@ -76,11 +76,13 @@ body {
 
 .restaurants {
   background-color: whitesmoke;
-  display: flex;
+  
+  padding: 30px 0;
+  &-content{
+    display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 30px 0;
-  a {
+    a {
     text-decoration: none;
     color: black;
   }
@@ -140,7 +142,20 @@ body {
       margin: -60px 20px;
     }
   }
+  }
+  
 }
+@media (min-width: 992px) {
+  .restaurants {
+    &-content {
+      .restaurant {
+        margin:  20px 2%;
+        width: calc(42%);
+      }
+    }
+  }
+}
+
 
 footer {
   font-family: "Roboto", sans-serif;
