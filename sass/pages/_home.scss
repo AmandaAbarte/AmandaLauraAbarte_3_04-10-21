@@ -112,8 +112,10 @@ body {
         align-items: center;
         justify-content: center;
       }
-      i:focus {
+      i:hover {
+        font-weight: 900;
         color: $secondary-colour;
+        fill: $secondary-colour;
       }
     }
     &:hover {
