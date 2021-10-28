@@ -32,7 +32,7 @@ body {
     }
     li {
       background-color: whitesmoke;
-      width: 90%;
+      width: 95%;
       height: 80px;
       margin: 20px;
       border-radius: 25px;
@@ -66,6 +66,8 @@ body {
       }
       &:hover {
         background-color: $primary-colour-light;
+        transform: scale(1.03);
+      @include element-shadow-dark;
         i {
           color: $primary-colour;
         }
