@@ -17,6 +17,10 @@ body {
     padding: 0 20px;
     @include element-shadow;
     cursor: pointer;
+    &:hover {
+      @include element-shadow-dark;
+      opacity: 90%;
+    }
   }
 }
 
