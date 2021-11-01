@@ -104,14 +104,15 @@ body {
   margin-left: 10px;
 }
 
+.howitworks h2 {
+  margin-left: 20px;
+}
+
 .howitworks ol {
   list-style: none;
   counter-reset: li;
   padding-left: 0;
-}
-
-.howitworks ol h2 {
-  margin-left: 20px;
+  margin: 20px;
 }
 
 .howitworks ol li {
@@ -174,6 +175,14 @@ body {
 
 .howitworks ol li:hover i {
   color: #9356DC;
+}
+
+@media (min-width: 992px) {
+  .howitworks ol {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .restaurants {
