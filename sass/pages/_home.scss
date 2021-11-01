@@ -3,6 +3,7 @@ body {
   max-width: 1500px;
 }
 
+/*Explore Section*/
 .explore {
   display: flex;
   flex-direction: column;
@@ -26,6 +27,7 @@ body {
 @media (min-width: 992px) {
 }
 
+/*How It Works Section*/
 .howitworks {
   margin-left: 10px;
 
@@ -90,6 +92,7 @@ body {
   }
 }
 
+/*Restaurants Section*/
 .restaurants {
   background-color: whitesmoke;
 
