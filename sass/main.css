@@ -63,6 +63,10 @@ nav i {
   color: grey;
 }
 
+main .menu {
+  background-color: whitesmoke;
+}
+
 main .menu .title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -75,6 +79,12 @@ main .menu .title {
           align-items: center;
   margin: 20px;
   font-size: 30px;
+}
+
+main .menu .course .item {
+  margin: auto;
+  background-color: white;
+  width: 95%;
 }
 
 body {
