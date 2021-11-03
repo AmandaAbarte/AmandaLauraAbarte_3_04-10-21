@@ -1,41 +1,9 @@
 body {
-  margin: 0;
-  h2 {
-    font-family: "Shrikhand", cursive;
-  }
-  h3 {
-    font-family: "Roboto", sans-serif;
-  }
-  p {
-    font-family: "Roboto", sans-serif;
-  }
+  margin: 0 auto;
+  max-width: 1500px;
 }
 
-nav {
-  background-color: whitesmoke;
-  display: flex;
-  justify-content: center;
-  img {
-    margin: 20px 0;
-    &:hover {
-      cursor: pointer;
-    }
-  }
-}
-
-header {
-  background-color: lightgrey;
-  .locationselector {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    i {
-      margin-right: 10px;
-    }
-  }
-}
-
+/*Explore Section*/
 .explore {
   display: flex;
   flex-direction: column;
@@ -50,17 +18,30 @@ header {
     padding: 0 20px;
     @include element-shadow;
     cursor: pointer;
+    &:hover {
+      @include element-shadow-dark;
+      opacity: 90%;
+    }
   }
 }
+@media (min-width: 992px) {
+}
+
+/*How It Works Section*/
 .howitworks {
   margin-left: 10px;
 
+  h2 {
+    margin-left: 20px;
+  }
   ol {
     list-style: none;
     counter-reset: li;
+    padding-left: 0;
+    margin: 20px;
     li {
       background-color: whitesmoke;
-      width: 90%;
+      width: 95%;
       height: 80px;
       margin: 20px;
       border-radius: 25px;
@@ -94,6 +75,8 @@ header {
       }
       &:hover {
         background-color: $primary-colour-light;
+        transform: scale(1.03);
+        @include element-shadow-dark;
         i {
           color: $primary-colour;
         }
@@ -101,56 +84,100 @@ header {
     }
   }
 }
+@media (min-width: 992px) {
+  .howitworks {
+    ol {
+      display: flex;
+    }
+  }
+}
+
+/*Restaurants Section*/
 .restaurants {
   background-color: whitesmoke;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   padding: 30px 0;
-  .restaurant {
-    background-color: white;
-    width: 92%;
-    height: 350px;
-    margin: 20px 0;
-    border-radius: 20px;
-    overflow: hidden;
-    @include element-shadow;
-    .new {
-      position: relative;
-      width: 100px;
-      height: 50px;
-      margin: 0;
-      top: 35px;
-      right: -80%;
-      background-color: $tertiary-colour;
-      color: $tertiary-colour-dark;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+  .title {
+    margin-left: 50px;
+    font-size: 30px;
+  }
+  &-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    a {
+      text-decoration: none;
+      color: black;
     }
-    &-thumbnail {
-      width: 100%;
-      height: 70%;
-      object-fit: cover;
-      margin-top: -50px;
-    }
-    &-details {
-      margin: 0 20px;
-      display: flex;
-      flex-direction: row;
-      &-text {
-        width: 80%;
+    .restaurant {
+      background-color: white;
+      width: 92%;
+      height: 350px;
+      margin: 20px 0;
+      border-radius: 20px;
+      overflow: hidden;
+      @include element-shadow;
+
+      &-thumbnail {
+        width: 100%;
+        height: 70%;
+        object-fit: cover;
       }
-      i {
-        width: 20%;
-        font-size: 50px;
+      &-details {
+        margin: 0 20px;
         display: flex;
+        flex-direction: row;
         align-items: center;
-        justify-content: center;
+        &-text {
+          width: 90%;
+        }
+        i {
+          width: 10%;
+          height: 50px;
+          font-size: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        i:hover {
+          font-weight: 900;
+          background: -webkit-linear-gradient($secondary-colour , $primary-colour);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.03);
+        @include element-shadow-dark;
       }
     }
-    &:hover {
-      cursor: pointer;
+    .restaurant-new {
+      .banner {
+        position: relative;
+        width: 100px;
+        height: 50px;
+        margin: 0;
+        right: -75%;
+        top: -240px;
+        background-color: $tertiary-colour;
+        color: $tertiary-colour-dark;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .restaurant-details {
+        margin: -60px 20px;
+      }
+    }
+  }
+}
+@media (min-width: 992px) {
+  .restaurants {
+    &-content {
+      .restaurant {
+        margin: 20px 2%;
+        width: calc(42%);
+      }
     }
   }
 }

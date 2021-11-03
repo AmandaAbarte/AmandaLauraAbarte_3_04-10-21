@@ -1,35 +1,13 @@
-body {
-  margin: 0;
-}
-
-body h2 {
+html h2 {
   font-family: "Shrikhand", cursive;
 }
 
-body h3 {
+html h3 {
   font-family: "Roboto", sans-serif;
 }
 
-body p {
+html p {
   font-family: "Roboto", sans-serif;
-}
-
-nav {
-  background-color: whitesmoke;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-nav img {
-  margin: 20px 0;
-}
-
-nav img:hover {
-  cursor: pointer;
 }
 
 header {
@@ -53,6 +31,68 @@ header .locationselector i {
   margin-right: 10px;
 }
 
+header img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+nav {
+  background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav img {
+  width: 50%;
+  max-width: 500px;
+  margin: 20px 15%;
+}
+
+nav img:hover {
+  cursor: pointer;
+}
+
+nav i {
+  font-size: 40px;
+  margin: 30px 0 20px 50px;
+  color: grey;
+}
+
+main .menu {
+  background-color: whitesmoke;
+}
+
+main .menu .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px;
+  font-size: 30px;
+}
+
+main .menu .course .item {
+  margin: auto;
+  background-color: white;
+  width: 95%;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
+/*Explore Section*/
 .explore {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -80,18 +120,31 @@ header .locationselector i {
   cursor: pointer;
 }
 
+.explore button:hover {
+  -webkit-box-shadow: 2px 3px 14px 2px rgba(0, 0, 0, 0.44);
+          box-shadow: 2px 3px 14px 2px rgba(0, 0, 0, 0.44);
+  opacity: 90%;
+}
+
+/*How It Works Section*/
 .howitworks {
   margin-left: 10px;
+}
+
+.howitworks h2 {
+  margin-left: 20px;
 }
 
 .howitworks ol {
   list-style: none;
   counter-reset: li;
+  padding-left: 0;
+  margin: 20px;
 }
 
 .howitworks ol li {
   background-color: whitesmoke;
-  width: 90%;
+  width: 95%;
   height: 80px;
   margin: 20px;
   border-radius: 25px;
@@ -141,14 +194,36 @@ header .locationselector i {
 
 .howitworks ol li:hover {
   background-color: #e4d5f6;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-box-shadow: 2px 3px 14px 2px rgba(0, 0, 0, 0.44);
+          box-shadow: 2px 3px 14px 2px rgba(0, 0, 0, 0.44);
 }
 
 .howitworks ol li:hover i {
   color: #9356DC;
 }
 
+@media (min-width: 992px) {
+  .howitworks ol {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+/*Restaurants Section*/
 .restaurants {
   background-color: whitesmoke;
+  padding: 30px 0;
+}
+
+.restaurants .title {
+  margin-left: 50px;
+  font-size: 30px;
+}
+
+.restaurants-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -157,10 +232,14 @@ header .locationselector i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 30px 0;
 }
 
-.restaurants .restaurant {
+.restaurants-content a {
+  text-decoration: none;
+  color: black;
+}
+
+.restaurants-content .restaurant {
   background-color: white;
   width: 92%;
   height: 350px;
@@ -171,13 +250,68 @@ header .locationselector i {
           box-shadow: 2px 3px 14px -3px rgba(0, 0, 0, 0.44);
 }
 
-.restaurants .restaurant .new {
+.restaurants-content .restaurant-thumbnail {
+  width: 100%;
+  height: 70%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.restaurants-content .restaurant-details {
+  margin: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.restaurants-content .restaurant-details-text {
+  width: 90%;
+}
+
+.restaurants-content .restaurant-details i {
+  width: 10%;
+  height: 50px;
+  font-size: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.restaurants-content .restaurant-details i:hover {
+  font-weight: 900;
+  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.restaurants-content .restaurant:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-box-shadow: 2px 3px 14px 2px rgba(0, 0, 0, 0.44);
+          box-shadow: 2px 3px 14px 2px rgba(0, 0, 0, 0.44);
+}
+
+.restaurants-content .restaurant-new .banner {
   position: relative;
   width: 100px;
   height: 50px;
   margin: 0;
-  top: 35px;
-  right: -80%;
+  right: -75%;
+  top: -240px;
   background-color: #99E2D0;
   color: #278870;
   display: -webkit-box;
@@ -191,45 +325,15 @@ header .locationselector i {
           align-items: center;
 }
 
-.restaurants .restaurant-thumbnail {
-  width: 100%;
-  height: 70%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin-top: -50px;
+.restaurants-content .restaurant-new .restaurant-details {
+  margin: -60px 20px;
 }
 
-.restaurants .restaurant-details {
-  margin: 0 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.restaurants .restaurant-details-text {
-  width: 80%;
-}
-
-.restaurants .restaurant-details i {
-  width: 20%;
-  font-size: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.restaurants .restaurant:hover {
-  cursor: pointer;
+@media (min-width: 992px) {
+  .restaurants-content .restaurant {
+    margin: 20px 2%;
+    width: calc(42%);
+  }
 }
 
 footer {
