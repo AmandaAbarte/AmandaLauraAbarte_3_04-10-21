@@ -1,0 +1,13 @@
+button {
+    background: linear-gradient($secondary-colour 0%, $primary-colour 100%);
+    color: white;
+    border-width: 0;
+    border-radius: 25px;
+    padding: 0 20px;
+    @include element-shadow;
+    cursor: pointer;
+    &:hover {
+      @include element-shadow-dark;
+      opacity: 90%;
+    }
+  }
