@@ -10,33 +10,37 @@ main {
     }
     .course {
       .item {
-          display: flex;
-        margin: 20px auto;
+        display: flex;
+        align-items: center;
+        margin: 20px 0 20px 20px;
         background-color: white;
         width: 95%;
         .text {
-            margin-left: 20px;
-            width: 70%;
+          margin-left: 20px;
+          width: 70%;
         }
         .price {
-            width: 20%;
+          width: 20%;
         }
-        i {
+        .icon {
             width: 10%;
-          display: none;
-          position: absolute;
+            height: 100%;
+          font-size: 30px;
+          transform-origin: 100% 100%;
+          transform: scaleX(0);
+          transition: transform 100ms;
+          color: white;
         }
-        &:hover i {
-          display: flex;
-          align-items: center;
-          right: 5%;
+        &:hover .icon {
+          transform: scaleX(1);
+          background-color: $tertiary-colour;
         }
       }
     }
   }
   .order-button {
-      margin: 20px 30%;
-      padding: 0 50px;
-      width: 40%;
+    margin: 20px 30%;
+    padding: 0 50px;
+    width: 40%;
   }
 }

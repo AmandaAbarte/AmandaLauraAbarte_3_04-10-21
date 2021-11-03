@@ -103,7 +103,10 @@ main .menu .course .item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 20px auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0 20px 20px;
   background-color: white;
   width: 95%;
 }
@@ -117,20 +120,25 @@ main .menu .course .item .price {
   width: 20%;
 }
 
-main .menu .course .item i {
+main .menu .course .item .icon {
   width: 10%;
-  display: none;
-  position: absolute;
+  height: 100%;
+  font-size: 30px;
+  -webkit-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 100ms;
+  transition: -webkit-transform 100ms;
+  transition: transform 100ms;
+  transition: transform 100ms, -webkit-transform 100ms;
+  color: white;
 }
 
-main .menu .course .item:hover i {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  right: 5%;
+main .menu .course .item:hover .icon {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  background-color: #99E2D0;
 }
 
 main .order-button {
