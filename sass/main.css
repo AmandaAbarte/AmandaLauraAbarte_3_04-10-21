@@ -82,9 +82,37 @@ main .menu .title {
 }
 
 main .menu .course .item {
-  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px auto;
   background-color: white;
   width: 95%;
+}
+
+main .menu .course .item .text {
+  margin-left: 20px;
+  width: 70%;
+}
+
+main .menu .course .item .price {
+  width: 20%;
+}
+
+main .menu .course .item i {
+  width: 10%;
+  display: none;
+  position: absolute;
+}
+
+main .menu .course .item:hover i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  right: 5%;
 }
 
 body {

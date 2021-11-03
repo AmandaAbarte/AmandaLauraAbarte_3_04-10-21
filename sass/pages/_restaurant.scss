@@ -10,9 +10,27 @@ main {
     }
     .course {
       .item {
-        margin: auto;
+          display: flex;
+        margin: 20px auto;
         background-color: white;
         width: 95%;
+        .text {
+            margin-left: 20px;
+            width: 70%;
+        }
+        .price {
+            width: 20%;
+        }
+        i {
+            width: 10%;
+          display: none;
+          position: absolute;
+        }
+        &:hover i {
+          display: flex;
+          align-items: center;
+          right: 5%;
+        }
       }
     }
   }
