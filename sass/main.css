@@ -109,6 +109,10 @@ main .menu .course .item {
   margin: 20px 0 20px 20px;
   background-color: white;
   width: 95%;
+  height: 100px;
+  cursor: pointer;
+  border-radius: 25px;
+  overflow: hidden;
 }
 
 main .menu .course .item .text {
@@ -117,28 +121,35 @@ main .menu .course .item .text {
 }
 
 main .menu .course .item .price {
-  width: 20%;
+  width: 10%;
 }
 
 main .menu .course .item .icon {
-  width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20%;
   height: 100%;
   font-size: 30px;
   -webkit-transform-origin: 100% 100%;
           transform-origin: 100% 100%;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transition: -webkit-transform 100ms;
-  transition: -webkit-transform 100ms;
-  transition: transform 100ms;
-  transition: transform 100ms, -webkit-transform 100ms;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
   color: white;
+  position: relative;
+  right: -250px;
 }
 
 main .menu .course .item:hover .icon {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+  margin: 0;
   background-color: #99E2D0;
+  right: 0;
 }
 
 main .order-button {
