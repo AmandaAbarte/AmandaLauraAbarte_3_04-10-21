@@ -96,7 +96,25 @@ main .menu .title {
       -ms-flex-align: center;
           align-items: center;
   margin: 20px;
-  font-size: 30px;
+  font-size: 24px;
+}
+
+main .menu .course {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .menu .course .title {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 main .menu .course .item {
@@ -106,7 +124,7 @@ main .menu .course .item {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 20px 0 20px 20px;
+  margin: 20px 0;
   background-color: white;
   width: 95%;
   height: 100px;
@@ -139,17 +157,19 @@ main .menu .course .item .icon {
   font-size: 30px;
   -webkit-transform-origin: 100% 100%;
           transform-origin: 100% 100%;
-  -webkit-transition: all 500ms ease-in-out;
-  transition: all 500ms ease-in-out;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
   color: white;
-  position: relative;
-  right: -250px;
 }
 
 main .menu .course .item:hover .icon {
-  margin: 0;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
   background-color: #99E2D0;
-  right: 0;
 }
 
 main .order-button {

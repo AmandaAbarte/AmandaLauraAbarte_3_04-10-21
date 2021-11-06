@@ -6,13 +6,19 @@ main {
       justify-content: space-between;
       align-items: center;
       margin: 20px;
-      font-size: 30px;
+      font-size: 24px;
     }
     .course {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .title {
+        align-self: flex-start;
+      }
       .item {
         display: flex;
         align-items: center;
-        margin: 20px 0 20px 20px;
+        margin: 20px 0;
         background-color: white;
         width: 95%;
         height: 100px;
@@ -34,15 +40,13 @@ main {
           height: 100%;
           font-size: 30px;
           transform-origin: 100% 100%;
-          transition: all 500ms ease-in-out;
+          transform: scaleX(0);
+          transition: transform 500ms;
           color: white;
-          position: relative;
-          right: -250px;
         }
         &:hover .icon {
-          margin: 0;
+          transform: scaleX(1);
           background-color: $tertiary-colour;
-          right: 0;
         }
       }
     }
