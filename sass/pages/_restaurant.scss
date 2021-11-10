@@ -1,8 +1,12 @@
 main {
   .menu {
+    margin-top: 35%;
     background-color: whitesmoke;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
     &-container {
       margin: auto;
+      padding: 50px 0;
       width: 95%;
       max-width: 880px;
     } 
@@ -11,7 +15,6 @@ main {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin: 20px;
       font-size: 24px;
     }
 

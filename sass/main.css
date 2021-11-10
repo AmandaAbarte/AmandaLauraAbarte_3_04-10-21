@@ -53,6 +53,8 @@ header img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  position: absolute;
+  z-index: -1;
 }
 
 nav {
@@ -82,11 +84,15 @@ nav i {
 }
 
 main .menu {
+  margin-top: 35%;
   background-color: whitesmoke;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
 }
 
 main .menu-container {
   margin: auto;
+  padding: 50px 0;
   width: 95%;
   max-width: 880px;
 }
@@ -101,7 +107,6 @@ main .menu .title {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 20px;
   font-size: 24px;
 }
 
