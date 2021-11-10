@@ -140,12 +140,14 @@ main .menu .course .item {
           align-items: center;
   width: 100%;
   margin: 30px 0 20px;
-  background-color: white;
   height: 100px;
   cursor: pointer;
   border-radius: 25px;
   overflow: hidden;
   opacity: 0;
+  background-color: white;
+  -webkit-box-shadow: 2px 3px 14px -3px rgba(0, 0, 0, 0.44);
+          box-shadow: 2px 3px 14px -3px rgba(0, 0, 0, 0.44);
   -webkit-animation-name: slideIn;
           animation-name: slideIn;
   -webkit-animation-duration: 2000ms;
