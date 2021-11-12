@@ -28,6 +28,83 @@ button:hover {
   opacity: 90%;
 }
 
+.loader-container {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: #e4cdff;
+  -webkit-animation: hide 500ms ease-in-out 2000ms forwards;
+          animation: hide 500ms ease-in-out 2000ms forwards;
+}
+
+.loader-container .loader {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  border-top: 20px solid red;
+  -webkit-animation: loader 1000ms linear infinite;
+          animation: loader 1000ms linear infinite;
+}
+
+@-webkit-keyframes loader {
+  0% {
+    border: 20px solid red;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    border: 10px solid pink;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes loader {
+  0% {
+    border: 20px solid red;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    border: 10px solid pink;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes hide {
+  0% {
+    opacity: 100%;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0%;
+    visibility: hidden;
+  }
+}
+
+@keyframes hide {
+  0% {
+    opacity: 100%;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0%;
+    visibility: hidden;
+  }
+}
+
 header {
   background-color: lightgrey;
 }
@@ -97,7 +174,7 @@ main .menu-container {
   max-width: 880px;
 }
 
-main .menu .title {
+main .menu-container .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,7 +187,7 @@ main .menu .title {
   font-size: 24px;
 }
 
-main .menu .course {
+main .menu-container .course {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,12 +203,12 @@ main .menu .course {
           justify-content: center;
 }
 
-main .menu .course .title {
+main .menu-container .course .title {
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
 
-main .menu .course .item {
+main .menu-container .course .item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -158,16 +235,16 @@ main .menu .course .item {
           animation-fill-mode: forwards;
 }
 
-main .menu .course .item .text {
+main .menu-container .course .item .text {
   margin-left: 20px;
   width: 70%;
 }
 
-main .menu .course .item .price {
+main .menu-container .course .item .price {
   width: 10%;
 }
 
-main .menu .course .item .icon-container {
+main .menu-container .course .item .icon-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -191,7 +268,7 @@ main .menu .course .item .icon-container {
   color: white;
 }
 
-main .menu .course .item .icon-container .icon {
+main .menu-container .course .item .icon-container .icon {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
   -webkit-transition: -webkit-transform 1000ms ease-in-out;
@@ -200,13 +277,13 @@ main .menu .course .item .icon-container .icon {
   transition: transform 1000ms ease-in-out, -webkit-transform 1000ms ease-in-out;
 }
 
-main .menu .course .item:hover .icon-container {
+main .menu-container .course .item:hover .icon-container {
   -webkit-transform: translateX(40px);
           transform: translateX(40px);
   background-color: #99E2D0;
 }
 
-main .menu .course .item:hover .icon-container .icon {
+main .menu-container .course .item:hover .icon-container .icon {
   -webkit-transform: rotate(0);
           transform: rotate(0);
 }
