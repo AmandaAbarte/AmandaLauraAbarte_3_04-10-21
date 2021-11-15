@@ -91,6 +91,8 @@ button:hover {
     visibility: visible;
   }
   100% {
+    opacity: 0%;
+    visibility: hidden;
   }
 }
 
@@ -100,6 +102,8 @@ button:hover {
     visibility: visible;
   }
   100% {
+    opacity: 0%;
+    visibility: hidden;
   }
 }
 
