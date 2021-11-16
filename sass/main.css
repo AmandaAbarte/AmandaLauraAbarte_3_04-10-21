@@ -172,7 +172,7 @@ main .menu-container {
   margin: auto;
   padding: 50px 0;
   width: 95%;
-  max-width: 880px;
+  max-width: 768px;
 }
 
 main .menu-container .title {
@@ -306,6 +306,13 @@ main .menu-container .course .item:hover .icon-container .icon {
           transform: rotate(0);
 }
 
+@media (min-width: 1024px) {
+  main .menu-container {
+    width: 65%;
+    margin: 5%;
+  }
+}
+
 main .order-button {
   margin: 20px 30%;
   padding: 0 50px;
@@ -323,6 +330,12 @@ main .order-summary {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: white;
+  padding: 20px;
+}
+
+main .order-summary .title {
+  border-bottom: 3px solid #9356DC;
 }
 
 main .order-summary .item {
@@ -353,10 +366,22 @@ main .order-summary .total {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 100%;
+  background-color: whitesmoke;
 }
 
 main .order-summary .total .price {
   margin-left: 20px;
+}
+
+@media (min-width: 1024px) {
+  main .order-summary {
+    position: fixed;
+    top: 55%;
+    left: 75%;
+    z-index: 1;
+    -webkit-box-shadow: 2px 3px 14px -3px rgba(0, 0, 0, 0.44);
+            box-shadow: 2px 3px 14px -3px rgba(0, 0, 0, 0.44);
+  }
 }
 
 @-webkit-keyframes slideIn {
