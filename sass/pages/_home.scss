@@ -1,4 +1,4 @@
-body {
+main {
   margin: 0 auto;
   max-width: 1500px;
 }
@@ -10,7 +10,6 @@ body {
   align-items: center;
   background-color: whitesmoke;
   padding: 30px 0 50px;
-  
 }
 @media (min-width: 992px) {
 }
@@ -128,7 +127,7 @@ body {
         }
         i:hover {
           font-weight: 900;
-          background: -webkit-linear-gradient($secondary-colour , $primary-colour);
+          background: -webkit-linear-gradient($secondary-colour, $primary-colour);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
         }
