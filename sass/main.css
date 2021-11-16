@@ -283,28 +283,22 @@ main .menu-container .course .item .icon-container {
   font-size: 30px;
   -webkit-transform-origin: 100% 100%;
           transform-origin: 100% 100%;
-  -webkit-transform: translateX(140px);
-          transform: translateX(140px);
-  -webkit-transition: -webkit-transform 1000ms ease-in-out;
-  transition: -webkit-transform 1000ms ease-in-out;
-  transition: transform 1000ms ease-in-out;
-  transition: transform 1000ms ease-in-out, -webkit-transform 1000ms ease-in-out;
   color: white;
 }
 
 main .menu-container .course .item .icon-container .icon {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
-  -webkit-transition: -webkit-transform 1000ms ease-in-out;
-  transition: -webkit-transform 1000ms ease-in-out;
-  transition: transform 1000ms ease-in-out;
-  transition: transform 1000ms ease-in-out, -webkit-transform 1000ms ease-in-out;
+  -webkit-transition: -webkit-transform 900ms ease-in-out;
+  transition: -webkit-transform 900ms ease-in-out;
+  transition: transform 900ms ease-in-out;
+  transition: transform 900ms ease-in-out, -webkit-transform 900ms ease-in-out;
 }
 
 main .menu-container .course .item:hover .icon-container {
-  -webkit-transform: translateX(40px);
-          transform: translateX(40px);
   background-color: #99E2D0;
+  -webkit-animation: iconContainer 1000ms linear forwards;
+          animation: iconContainer 1000ms linear forwards;
 }
 
 main .menu-container .course .item:hover .icon-container .icon {
@@ -384,6 +378,28 @@ main .order-summary .total .price {
   100% {
     margin: 20px 0;
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes iconContainer {
+  0% {
+    -webkit-transform: translateX(120px);
+            transform: translateX(120px);
+  }
+  100% {
+    -webkit-transform: translateX(2px);
+            transform: translateX(2px);
+  }
+}
+
+@keyframes iconContainer {
+  0% {
+    -webkit-transform: translateX(120px);
+            transform: translateX(120px);
+  }
+  100% {
+    -webkit-transform: translateX(2px);
+            transform: translateX(2px);
   }
 }
 
