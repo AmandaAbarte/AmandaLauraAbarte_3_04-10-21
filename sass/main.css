@@ -130,8 +130,7 @@ header .locationselector i {
 
 header img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  max-width: 1500px;
   position: absolute;
   z-index: -1;
 }
@@ -319,6 +318,53 @@ main .order-button {
   width: 40%;
 }
 
+main .order-summary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .order-summary .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+main .order-summary .item .price {
+  margin-left: 20px;
+}
+
+main .order-summary .total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+main .order-summary .total .price {
+  margin-left: 20px;
+}
+
 @-webkit-keyframes slideIn {
   0% {
     margin: 40px 0 20px;
@@ -339,6 +385,10 @@ main .order-button {
     margin: 20px 0;
     opacity: 1;
   }
+}
+
+body {
+  margin: 0;
 }
 
 main {
