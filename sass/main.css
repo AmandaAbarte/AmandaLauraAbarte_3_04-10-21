@@ -16,7 +16,6 @@ button {
   color: white;
   border-width: 0;
   border-radius: 25px;
-  padding: 0 20px;
   -webkit-box-shadow: 2px 3px 14px -3px rgba(0, 0, 0, 0.44);
           box-shadow: 2px 3px 14px -3px rgba(0, 0, 0, 0.44);
   cursor: pointer;
@@ -109,6 +108,7 @@ button:hover {
 
 header {
   background-color: lightgrey;
+  margin: 0;
 }
 
 header .locationselector {
@@ -315,7 +315,6 @@ main .menu-container .course .item:hover .icon-container .icon {
 
 main .order-button {
   margin: 20px 30%;
-  padding: 0 50px;
   width: 40%;
 }
 
@@ -376,9 +375,11 @@ main .order-summary .total .price {
 @media (min-width: 1024px) {
   main .order-summary {
     position: fixed;
-    top: 55%;
+    bottom: 0;
     left: 75%;
     z-index: 1;
+    padding: 20px 20px 0;
+    border-top-right-radius: 15%;
     -webkit-box-shadow: 2px 3px 14px -3px rgba(0, 0, 0, 0.44);
             box-shadow: 2px 3px 14px -3px rgba(0, 0, 0, 0.44);
   }
@@ -429,7 +430,7 @@ main .order-summary .total .price {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
 }
 
 main {
@@ -664,6 +665,8 @@ main {
 }
 
 footer {
+  position: relative;
+  z-index: 2;
   font-family: "Roboto", sans-serif;
   background-color: #292929;
   color: white;

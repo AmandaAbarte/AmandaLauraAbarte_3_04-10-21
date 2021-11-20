@@ -3,7 +3,6 @@ button {
     color: white;
     border-width: 0;
     border-radius: 25px;
-    padding: 0 20px;
     @include element-shadow;
     cursor: pointer;
     &:hover {

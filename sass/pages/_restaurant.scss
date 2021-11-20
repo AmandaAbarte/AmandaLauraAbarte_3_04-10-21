@@ -107,7 +107,6 @@ main {
 
   .order-button {
     margin: 20px 30%;
-    padding: 0 50px;
     width: 40%;
   }
 
@@ -146,9 +145,11 @@ main {
   @media (min-width: 1024px){
     .order-summary {
       position: fixed;
-      top: 55%;
+      bottom: 0;
       left: 75%;
       z-index: 1;
+      padding: 20px 20px 0;
+      border-top-right-radius: 15%;
       @include element-shadow
     }
   }
