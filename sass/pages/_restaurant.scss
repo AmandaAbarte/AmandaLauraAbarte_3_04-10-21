@@ -95,6 +95,43 @@
         }
       }
     }
+    .order-summary {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      background-color: white;
+
+      .title {
+        border-bottom: 3px solid $primary-colour;
+      }
+
+      .item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        .price {
+          margin-left: 20px;
+        }
+      }
+
+      .total {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        background-color: whitesmoke;
+        .price {
+          margin-left: 20px;
+        }
+      }
+
+      .order-button {
+        margin: 20px 30%;
+        width: 40%;
+      }
+    }
   }
 }
 
@@ -112,45 +149,10 @@
         width: 100%;
 
         .order-summary {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
           height: 70%;
           width: 30%;
           margin-top: 30px;
-          padding: 20px;
           @include element-shadow;
-          background-color: white;
-
-          .title {
-            border-bottom: 3px solid $primary-colour;
-          }
-
-          .item {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            width: 100%;
-            .price {
-              margin-left: 20px;
-            }
-          }
-
-          .total {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            width: 100%;
-            background-color: whitesmoke;
-            .price {
-              margin-left: 20px;
-            }
-          }
-
-          .order-button {
-            margin: 20px 30%;
-            width: 40%;
-          }
         }
       }
     }

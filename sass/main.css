@@ -307,6 +307,65 @@ nav i {
           transform: rotate(0);
 }
 
+.menu-container .order-summary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  background-color: white;
+}
+
+.menu-container .order-summary .title {
+  border-bottom: 3px solid #9356DC;
+}
+
+.menu-container .order-summary .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+.menu-container .order-summary .item .price {
+  margin-left: 20px;
+}
+
+.menu-container .order-summary .total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  background-color: whitesmoke;
+}
+
+.menu-container .order-summary .total .price {
+  margin-left: 20px;
+}
+
+.menu-container .order-summary .order-button {
+  margin: 20px 30%;
+  width: 40%;
+}
+
 @media (min-width: 1024px) {
   .menu {
     margin-top: 15%;
@@ -325,61 +384,11 @@ nav i {
     width: 100%;
   }
   .menu-container .container .order-summary {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     height: 70%;
     width: 30%;
     margin-top: 30px;
-    padding: 20px;
     -webkit-box-shadow: 2px 3px 14px -3px rgba(0, 0, 0, 0.44);
             box-shadow: 2px 3px 14px -3px rgba(0, 0, 0, 0.44);
-    background-color: white;
-  }
-  .menu-container .container .order-summary .title {
-    border-bottom: 3px solid #9356DC;
-  }
-  .menu-container .container .order-summary .item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    width: 100%;
-  }
-  .menu-container .container .order-summary .item .price {
-    margin-left: 20px;
-  }
-  .menu-container .container .order-summary .total {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    width: 100%;
-    background-color: whitesmoke;
-  }
-  .menu-container .container .order-summary .total .price {
-    margin-left: 20px;
-  }
-  .menu-container .container .order-summary .order-button {
-    margin: 20px 30%;
-    width: 40%;
   }
 }
 
