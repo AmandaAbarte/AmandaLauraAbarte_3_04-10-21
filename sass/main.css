@@ -334,6 +334,7 @@ nav i {
         -ms-flex-align: center;
             align-items: center;
     height: 70%;
+    width: 30%;
     margin-top: 30px;
     padding: 20px;
     -webkit-box-shadow: 2px 3px 14px -3px rgba(0, 0, 0, 0.44);
