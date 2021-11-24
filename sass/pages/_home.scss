@@ -1,4 +1,8 @@
-body {
+body { 
+margin: 0 auto;
+}
+
+main {
   margin: 0 auto;
   max-width: 1500px;
 }
@@ -9,28 +13,13 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: whitesmoke;
-  padding: 30px 0 50px;
-  button {
-    background: linear-gradient($secondary-colour 0%, $primary-colour 100%);
-    color: white;
-    border-width: 0;
-    border-radius: 25px;
-    padding: 0 20px;
-    @include element-shadow;
-    cursor: pointer;
-    &:hover {
-      @include element-shadow-dark;
-      opacity: 90%;
-    }
-  }
+  padding: 30px 15px 50px;
 }
 @media (min-width: 992px) {
 }
 
 /*How It Works Section*/
 .howitworks {
-  margin-left: 10px;
-
   h2 {
     margin-left: 20px;
   }
@@ -140,7 +129,7 @@ body {
         }
         i:hover {
           font-weight: 900;
-          background: -webkit-linear-gradient($secondary-colour , $primary-colour);
+          background: -webkit-linear-gradient($secondary-colour, $primary-colour);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
         }
@@ -183,6 +172,8 @@ body {
 }
 
 footer {
+  position: relative;
+  z-index: 2;
   font-family: "Roboto", sans-serif;
   background-color: rgb(41, 41, 41);
   color: white;

@@ -1,16 +1,18 @@
 header {
-    background-color: lightgrey;
-    .locationselector {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-      i {
-        margin-right: 10px;
-      }
-    }
-    img {
-        width: 100%;
-        object-fit: cover;
+  background-color: lightgrey;
+  margin: 0;
+  .locationselector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    i {
+      margin-right: 10px;
     }
   }
+  img {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+}
