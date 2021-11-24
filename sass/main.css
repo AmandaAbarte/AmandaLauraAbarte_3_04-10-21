@@ -160,21 +160,21 @@ nav i {
   color: grey;
 }
 
-main .menu {
+.menu {
   margin-top: 35%;
   background-color: whitesmoke;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
 }
 
-main .menu-container {
+.menu-container {
   margin: auto;
   padding: 50px 0;
   width: 95%;
   max-width: 768px;
 }
 
-main .menu-container .title {
+.menu-container .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -187,7 +187,7 @@ main .menu-container .title {
   font-size: 24px;
 }
 
-main .menu-container .title i {
+.menu-container .title i {
   width: 10%;
   height: 50px;
   font-size: 50px;
@@ -203,14 +203,14 @@ main .menu-container .title i {
   cursor: pointer;
 }
 
-main .menu-container .title i:hover {
+.menu-container .title i:hover {
   font-weight: 900;
   background: -webkit-linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-main .menu-container .course {
+.menu-container .course {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -226,12 +226,12 @@ main .menu-container .course {
           justify-content: center;
 }
 
-main .menu-container .course .title {
+.menu-container .course .title {
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
 
-main .menu-container .course .item {
+.menu-container .course .item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -258,16 +258,16 @@ main .menu-container .course .item {
           animation-fill-mode: forwards;
 }
 
-main .menu-container .course .item .text {
+.menu-container .course .item .text {
   margin-left: 20px;
   width: 70%;
 }
 
-main .menu-container .course .item .price {
+.menu-container .course .item .price {
   width: 10%;
 }
 
-main .menu-container .course .item .icon-container {
+.menu-container .course .item .icon-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -285,7 +285,7 @@ main .menu-container .course .item .icon-container {
   color: white;
 }
 
-main .menu-container .course .item .icon-container .icon {
+.menu-container .course .item .icon-container .icon {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
   -webkit-transition: -webkit-transform 900ms ease-in-out;
@@ -294,26 +294,26 @@ main .menu-container .course .item .icon-container .icon {
   transition: transform 900ms ease-in-out, -webkit-transform 900ms ease-in-out;
 }
 
-main .menu-container .course .item:hover .icon-container {
+.menu-container .course .item:hover .icon-container {
   background-color: #99E2D0;
   -webkit-animation: iconContainer 1000ms linear forwards;
           animation: iconContainer 1000ms linear forwards;
 }
 
-main .menu-container .course .item:hover .icon-container .icon {
+.menu-container .course .item:hover .icon-container .icon {
   -webkit-transform: rotate(0);
           transform: rotate(0);
 }
 
 @media (min-width: 1024px) {
-  main .menu {
+  .menu {
     margin-top: 15%;
   }
-  main .menu-container {
+  .menu-container {
     width: 85%;
     max-width: 1000px;
   }
-  main .menu-container .container {
+  .menu-container .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -322,7 +322,7 @@ main .menu-container .course .item:hover .icon-container .icon {
             justify-content: space-between;
     width: 100%;
   }
-  main .menu-container .container .order-summary {
+  .menu-container .container .order-summary {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -340,10 +340,10 @@ main .menu-container .course .item:hover .icon-container .icon {
             box-shadow: 2px 3px 14px -3px rgba(0, 0, 0, 0.44);
     background-color: white;
   }
-  main .menu-container .container .order-summary .title {
+  .menu-container .container .order-summary .title {
     border-bottom: 3px solid #9356DC;
   }
-  main .menu-container .container .order-summary .item {
+  .menu-container .container .order-summary .item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -355,10 +355,10 @@ main .menu-container .course .item:hover .icon-container .icon {
         justify-content: space-around;
     width: 100%;
   }
-  main .menu-container .container .order-summary .item .price {
+  .menu-container .container .order-summary .item .price {
     margin-left: 20px;
   }
-  main .menu-container .container .order-summary .total {
+  .menu-container .container .order-summary .total {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -371,10 +371,10 @@ main .menu-container .course .item:hover .icon-container .icon {
     width: 100%;
     background-color: whitesmoke;
   }
-  main .menu-container .container .order-summary .total .price {
+  .menu-container .container .order-summary .total .price {
     margin-left: 20px;
   }
-  main .menu-container .container .order-summary .order-button {
+  .menu-container .container .order-summary .order-button {
     margin: 20px 30%;
     width: 40%;
   }
