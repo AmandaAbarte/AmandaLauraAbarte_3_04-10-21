@@ -99,8 +99,12 @@ main {
   @media (min-width: 1024px) {
     .menu {
       &-container {
-        width: 65%;
-        margin: 5%;
+        max-width: 900px;
+        .container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        }
       }
     }
   }
@@ -142,14 +146,10 @@ main {
       }
     }
   }
+
   @media (min-width: 1024px){
     .order-summary {
-      position: fixed;
-      bottom: 0;
-      left: 75%;
-      z-index: 1;
-      padding: 20px 20px 0;
-      border-top-right-radius: 15%;
+      height: 70%;
       @include element-shadow
     }
   }

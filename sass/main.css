@@ -308,8 +308,16 @@ main .menu-container .course .item:hover .icon-container .icon {
 
 @media (min-width: 1024px) {
   main .menu-container {
-    width: 65%;
-    margin: 5%;
+    max-width: 900px;
+  }
+  main .menu-container .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
   }
 }
 
@@ -374,12 +382,7 @@ main .order-summary .total .price {
 
 @media (min-width: 1024px) {
   main .order-summary {
-    position: fixed;
-    bottom: 0;
-    left: 75%;
-    z-index: 1;
-    padding: 20px 20px 0;
-    border-top-right-radius: 15%;
+    height: 70%;
     -webkit-box-shadow: 2px 3px 14px -3px rgba(0, 0, 0, 0.44);
             box-shadow: 2px 3px 14px -3px rgba(0, 0, 0, 0.44);
   }
