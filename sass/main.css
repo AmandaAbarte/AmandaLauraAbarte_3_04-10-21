@@ -459,14 +459,10 @@ main {
       -ms-flex-align: center;
           align-items: center;
   background-color: whitesmoke;
-  padding: 30px 0 50px;
+  padding: 30px 15px 50px;
 }
 
 /*How It Works Section*/
-.howitworks {
-  margin-left: 10px;
-}
-
 .howitworks h2 {
   margin-left: 20px;
 }
