@@ -99,8 +99,12 @@
 
         .price {
           width: 10%;
+          transform: translateX(100%);
+          transition: all 1000ms linear;
         }
-
+        &:hover .price {
+          transform: translateX(0%);
+        }
         .icon-container {
           display: flex;
           justify-content: center;
@@ -113,7 +117,7 @@
 
           .icon {
             transform: rotate(360deg);
-            transition: transform 900ms ease-in-out;
+            transition: transform 1000ms linear;
           }
         }
 
@@ -204,9 +208,9 @@
 }
 @keyframes iconContainer {
   0% {
-    transform: translateX(120px);
+    transform: translateX(100%);
   }
   100% {
-    transform: translateX(2px);
+    transform: translateX(2%);
   }
 }
