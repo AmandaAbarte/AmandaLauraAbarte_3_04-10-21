@@ -260,6 +260,7 @@ nav i {
 .menu-container .course .title {
   -ms-flex-item-align: start;
       align-self: flex-start;
+  border-bottom: 2px #99E2D0 solid;
 }
 
 .menu-container .course .item {
