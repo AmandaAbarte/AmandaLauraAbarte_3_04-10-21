@@ -1,9 +1,11 @@
 button {
-    background: linear-gradient($secondary-colour 0%, $primary-colour 100%);
-    color: white;
     border-width: 0;
     border-radius: 25px;
+    font-size: large;
     @include element-shadow;
+    background: linear-gradient($secondary-colour 0%, $primary-colour 100%);
+    color: white;
+    padding: 10px 20px;
     cursor: pointer;
     &:hover {
       @include element-shadow-dark;
