@@ -1,14 +1,92 @@
 .menu {
-  margin-top: 35%;
+  margin: 35% auto ;
   background-color: whitesmoke;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
+  width: 100%;
 
   &-container {
-    margin: auto;
     padding: 50px 0;
     width: 90%;
     max-width: 768px;
+    margin: auto;
+
+    .heart {
+      background-color: black;
+      display: inline-block;
+      height: 30px;
+      margin: 0 10px;
+      position: relative;
+      top: 0;
+      transform: rotate(-45deg);
+      width: 30px;
+      &:before {
+        content: "";
+        background-color: black;
+        border-radius: 50%;
+        height: 30px;
+        position: absolute;
+        width: 30px;
+        top: -15px;
+        left: 0;
+      }
+      &:after {
+        content: "";
+        background-color: black;
+        border-radius: 50%;
+        height: 30px;
+        position: absolute;
+        width: 30px;
+        left: 15px;
+        top: 0;
+      }
+
+      &-inner {
+        background-color: white;
+        display: inline-block;
+        height: 0px;
+        margin-left: 5px;
+        margin-top: -10px;
+        position: relative;
+        top: 5px;
+        border-radius: 15px 15px 0 0;
+        width: 0px;
+        z-index: 2;
+        transition: all 500ms ease-in-out;
+        &:before {
+          content: "";
+          background-color: white;
+          border-radius: 50%;
+          height: 0px;
+          position: absolute;
+          width: 0px;
+          left: 10px;
+          top: 10px;
+          transition: all 500ms ease-in-out;
+        }
+      }
+
+      &:hover {
+        .heart-inner {
+          background: -webkit-linear-gradient(
+            0deg,
+            $secondary-colour,
+            $primary-colour
+          );
+          height: 30px;
+          width: 20px;
+          &:before {
+            background: -webkit-linear-gradient(
+              0deg,
+              #ca68db,
+              $primary-colour
+            );
+            height: 20px;
+            width: 20px;
+          }
+        }
+      }
+    }
 
     .title {
       display: flex;
@@ -42,6 +120,7 @@
 
       .title {
         align-self: flex-start;
+        border-bottom: 2px $tertiary-colour solid;
       }
 
       .item {
@@ -68,8 +147,12 @@
 
         .price {
           width: 10%;
+          transform: translateX(100%);
+          transition: all 1000ms linear;
         }
-
+        &:hover .price {
+          transform: translateX(0%);
+        }
         .icon-container {
           display: flex;
           justify-content: center;
@@ -82,7 +165,7 @@
 
           .icon {
             transform: rotate(360deg);
-            transition: transform 900ms ease-in-out;
+            transition: transform 1000ms linear;
           }
         }
 
@@ -102,6 +185,7 @@
       flex-direction: column;
       align-items: center;
       padding: 20px;
+      border-radius: 25px 25px 0 0 ;
       background-color: white;
 
       .title {
@@ -123,6 +207,7 @@
         flex-direction: row;
         justify-content: space-around;
         width: 100%;
+        padding: 10px 10px;
         background-color: whitesmoke;
         .price {
           margin-left: 20px;
@@ -136,7 +221,11 @@
     }
   }
 }
-
+@media (min-width: 768px) {
+  .menu {
+    width: 80%;
+  }
+} 
 @media (min-width: 1024px) {
   .menu {
     margin-top: 15%;
@@ -154,6 +243,7 @@
           height: 70%;
           width: 30%;
           margin-top: 30px;
+          margin-left: 5%;
           @include element-shadow;
         }
       }
@@ -173,9 +263,9 @@
 }
 @keyframes iconContainer {
   0% {
-    transform: translateX(120px);
+    transform: translateX(100%);
   }
   100% {
-    transform: translateX(2px);
+    transform: translateX(2%);
   }
 }
