@@ -167,7 +167,7 @@ nav i {
   background-color: whitesmoke;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
-  width: 80%;
+  width: 100%;
 }
 
 .menu-container {
@@ -480,6 +480,12 @@ nav i {
 .menu-container .order-summary .order-button {
   margin: 20px 30%;
   width: 40%;
+}
+
+@media (min-width: 768px) {
+  .menu {
+    width: 80%;
+  }
 }
 
 @media (min-width: 1024px) {
