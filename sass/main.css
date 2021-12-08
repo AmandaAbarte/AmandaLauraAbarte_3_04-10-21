@@ -108,6 +108,7 @@ button:hover {
 header {
   background-color: lightgrey;
   margin: 0;
+  font-weight: bold;
 }
 
 header .locationselector {
@@ -452,7 +453,7 @@ nav i {
 
 .menu-container .order-summary .order-button {
   margin: 20px 30%;
-  width: 40%;
+  width: 60%;
 }
 
 @media (min-width: 768px) {
