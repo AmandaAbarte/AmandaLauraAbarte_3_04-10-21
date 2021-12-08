@@ -5,39 +5,87 @@
   border-top-right-radius: 50px;
 
   &-container {
-    margin: auto;
     padding: 50px 0;
     width: 90%;
     max-width: 768px;
-    .heart-shape {
+    margin: auto;
+
+    .heart {
+      background-color: black;
+      display: inline-block;
+      height: 30px;
+      margin: 0 10px;
       position: relative;
-      width: 100px;
-      height: 100px;
-      transform: rotate(45deg);
-      background-color: $primary-colour;
+      top: 0;
+      transform: rotate(-45deg);
+      width: 30px;
       &:before {
-        content: '';
-        position: absolute;
-        width: 100px;
-        height: 100px;
+        content: "";
+        background-color: black;
         border-radius: 50%;
-        background-color: $primary-colour;
-        bottom: 0px;
-        left: -50px;
+        height: 30px;
+        position: absolute;
+        width: 30px;
+        top: -15px;
+        left: 0;
       }
       &:after {
-        content: '';
-        position: absolute;
-        width: 100px;
-        height: 100px;
+        content: "";
+        background-color: black;
         border-radius: 50%;
-        background-color: $primary-colour;
-        top: -50px;
-        right: 0px;
+        height: 30px;
+        position: absolute;
+        width: 30px;
+        left: 15px;
+        top: 0;
       }
 
-    }
+      &-inner {
+        background-color: white;
+        display: inline-block;
+        height: 0px;
+        margin-left: 5px;
+        margin-top: -10px;
+        position: relative;
+        top: 5px;
+        border-radius: 15px 15px 0 0;
+        width: 0px;
+        z-index: 2;
+        transition: all 500ms ease-in-out;
+        &:before {
+          content: "";
+          background-color: white;
+          border-radius: 50%;
+          height: 0px;
+          position: absolute;
+          width: 0px;
+          left: 10px;
+          top: 10px;
+          transition: all 500ms ease-in-out;
+        }
+      }
 
+      &:hover {
+        .heart-inner {
+          background: -webkit-linear-gradient(
+            0deg,
+            $secondary-colour,
+            $primary-colour
+          );
+          height: 30px;
+          width: 20px;
+          &:before {
+            background: -webkit-linear-gradient(
+              0deg,
+              #ca68db,
+              $primary-colour
+            );
+            height: 20px;
+            width: 20px;
+          }
+        }
+      }
+    }
 
     .shape {
       position: relative;

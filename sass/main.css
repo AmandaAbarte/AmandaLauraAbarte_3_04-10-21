@@ -170,41 +170,84 @@ nav i {
 }
 
 .menu-container {
-  margin: auto;
   padding: 50px 0;
   width: 90%;
   max-width: 768px;
+  margin: auto;
 }
 
-.menu-container .heart-shape {
+.menu-container .heart {
+  background-color: black;
+  display: inline-block;
+  height: 30px;
+  margin: 0 10px;
   position: relative;
-  width: 100px;
-  height: 100px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  background-color: #9356DC;
+  top: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  width: 30px;
 }
 
-.menu-container .heart-shape:before {
-  content: '';
-  position: absolute;
-  width: 100px;
-  height: 100px;
+.menu-container .heart:before {
+  content: "";
+  background-color: black;
   border-radius: 50%;
-  background-color: #9356DC;
-  bottom: 0px;
-  left: -50px;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+  top: -15px;
+  left: 0;
 }
 
-.menu-container .heart-shape:after {
-  content: '';
-  position: absolute;
-  width: 100px;
-  height: 100px;
+.menu-container .heart:after {
+  content: "";
+  background-color: black;
   border-radius: 50%;
-  background-color: #9356DC;
-  top: -50px;
-  right: 0px;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+  left: 15px;
+  top: 0;
+}
+
+.menu-container .heart-inner {
+  background-color: white;
+  display: inline-block;
+  height: 0px;
+  margin-left: 5px;
+  margin-top: -10px;
+  position: relative;
+  top: 5px;
+  border-radius: 15px 15px 0 0;
+  width: 0px;
+  z-index: 2;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+.menu-container .heart-inner:before {
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  height: 0px;
+  position: absolute;
+  width: 0px;
+  left: 10px;
+  top: 10px;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+.menu-container .heart:hover .heart-inner {
+  background: -webkit-linear-gradient(0deg, #FF79DA, #9356DC);
+  height: 30px;
+  width: 20px;
+}
+
+.menu-container .heart:hover .heart-inner:before {
+  background: -webkit-linear-gradient(0deg, #ca68db, #9356DC);
+  height: 20px;
+  width: 20px;
 }
 
 .menu-container .shape {
@@ -693,7 +736,7 @@ main {
           justify-content: center;
 }
 
-.restaurants-content .restaurant-details i:hover {
+.restaurants-content .restaurant-details i:hover:before {
   font-weight: 900;
   background: -webkit-linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
