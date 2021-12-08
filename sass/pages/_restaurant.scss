@@ -1,5 +1,5 @@
 .menu {
-  margin: 35% auto ;
+  margin: 35% auto 0;
   background-color: whitesmoke;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
@@ -121,6 +121,7 @@
       .title {
         align-self: flex-start;
         border-bottom: 2px $tertiary-colour solid;
+        font-weight: lighter;
       }
 
       .item {

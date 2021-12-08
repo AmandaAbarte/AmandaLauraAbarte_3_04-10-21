@@ -121,6 +121,7 @@ header .locationselector {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  padding: 10px 0;
 }
 
 header .locationselector i {
@@ -163,7 +164,7 @@ nav i {
 }
 
 .menu {
-  margin: 35% auto;
+  margin: 35% auto 0;
   background-color: whitesmoke;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
@@ -307,6 +308,7 @@ nav i {
   -ms-flex-item-align: start;
       align-self: flex-start;
   border-bottom: 2px #99E2D0 solid;
+  font-weight: lighter;
 }
 
 .menu-container .course .item {
@@ -556,7 +558,7 @@ main {
 }
 
 /*How It Works Section*/
-.howitworks h2 {
+.howitworks {
   margin-left: 20px;
 }
 
@@ -564,7 +566,7 @@ main {
   list-style: none;
   counter-reset: li;
   padding-left: 0;
-  margin: 20px;
+  margin: 20px 0;
 }
 
 .howitworks ol li {

@@ -7,7 +7,6 @@ main {
   max-width: 1500px;
   
 }
-
 /*Explore Section*/
 .explore {
   display: flex;
@@ -21,14 +20,13 @@ main {
 
 /*How It Works Section*/
 .howitworks {
-  h2 {
     margin-left: 20px;
-  }
+  
   ol {
     list-style: none;
     counter-reset: li;
     padding-left: 0;
-    margin: 20px;
+    margin: 20px 0;
     li {
       background-color: whitesmoke;
       width: 95%;
@@ -72,7 +70,7 @@ main {
         }
       }
     }
-  }
+}
 }
 @media (min-width: 992px) {
   .howitworks {
