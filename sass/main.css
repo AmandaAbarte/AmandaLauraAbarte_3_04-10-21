@@ -576,19 +576,23 @@ nav i {
   padding: 30px 15px 50px;
 }
 
-/*How It Works Section*/
-.howitworks {
-  margin-left: 20px;
+.explore p {
+  margin: 15px 0;
 }
 
-.howitworks ol {
+/*How It Works Section*/
+.how-it-works {
+  padding: 20px;
+}
+
+.how-it-works ol {
   list-style: none;
   counter-reset: li;
   padding-left: 0;
   margin: 20px 0;
 }
 
-.howitworks ol li {
+.how-it-works ol li {
   background-color: whitesmoke;
   width: 95%;
   height: 80px;
@@ -599,7 +603,7 @@ nav i {
   cursor: pointer;
 }
 
-.howitworks ol li::before {
+.how-it-works ol li::before {
   content: counter(li);
   counter-increment: li;
   background: #9356DC;
@@ -621,7 +625,7 @@ nav i {
   border-radius: 100%;
 }
 
-.howitworks ol li .li-details {
+.how-it-works ol li .item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -630,15 +634,14 @@ nav i {
           align-items: center;
   margin-left: 20px;
   position: relative;
-  top: -20px;
 }
 
-.howitworks ol li .li-details i {
+.how-it-works ol li .item i {
   margin: 0 25px;
   color: gray;
 }
 
-.howitworks ol li:hover {
+.how-it-works ol li:hover {
   background-color: #e4d5f6;
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
@@ -646,12 +649,12 @@ nav i {
           box-shadow: 2px 3px 14px 2px rgba(0, 0, 0, 0.44);
 }
 
-.howitworks ol li:hover i {
+.how-it-works ol li:hover i {
   color: #9356DC;
 }
 
 @media (min-width: 992px) {
-  .howitworks ol {
+  .how-it-works ol {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
