@@ -1,15 +1,24 @@
 .menu {
-  margin: 35% auto ;
+  margin: 35% auto 0;
   background-color: whitesmoke;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   width: 100%;
 
   &-container {
-    padding: 50px 0;
+    padding-top: 50px;
     width: 90%;
     max-width: 768px;
     margin: auto;
+    
+
+    .heart-one {
+      svg {
+        width: 50px;
+        height: 50px;
+        fill: yellowgreen;
+      }
+    }
 
     .heart {
       background-color: black;
@@ -20,6 +29,7 @@
       top: 0;
       transform: rotate(-45deg);
       width: 30px;
+
       &:before {
         content: "";
         background-color: black;
@@ -30,6 +40,7 @@
         top: -15px;
         left: 0;
       }
+
       &:after {
         content: "";
         background-color: black;
@@ -53,6 +64,7 @@
         width: 0px;
         z-index: 2;
         transition: all 500ms ease-in-out;
+
         &:before {
           content: "";
           background-color: white;
@@ -75,12 +87,9 @@
           );
           height: 30px;
           width: 20px;
+
           &:before {
-            background: -webkit-linear-gradient(
-              0deg,
-              #ca68db,
-              $primary-colour
-            );
+            background: -webkit-linear-gradient(0deg, #ca68db, $primary-colour);
             height: 20px;
             width: 20px;
           }
@@ -93,6 +102,7 @@
       justify-content: space-between;
       align-items: center;
       font-size: 24px;
+      margin: 10px 0;
 
       i {
         width: 10%;
@@ -121,6 +131,7 @@
       .title {
         align-self: flex-start;
         border-bottom: 2px $tertiary-colour solid;
+        font-weight: lighter;
       }
 
       .item {
@@ -143,6 +154,9 @@
         .text {
           margin-left: 20px;
           width: 70%;
+          p {
+            margin-top: 10px;
+          }
         }
 
         .price {
@@ -150,9 +164,11 @@
           transform: translateX(100%);
           transition: all 1000ms linear;
         }
+
         &:hover .price {
           transform: translateX(0%);
         }
+        
         .icon-container {
           display: flex;
           justify-content: center;
@@ -185,11 +201,12 @@
       flex-direction: column;
       align-items: center;
       padding: 20px;
-      border-radius: 25px 25px 0 0 ;
+      border-radius: 25px 25px 0 0;
       background-color: white;
 
       .title {
         border-bottom: 3px solid $primary-colour;
+        margin-bottom: 15px;
       }
 
       .item {
@@ -197,6 +214,8 @@
         flex-direction: row;
         justify-content: space-around;
         width: 100%;
+        margin: 10px 0;
+
         .price {
           margin-left: 20px;
         }
@@ -209,6 +228,8 @@
         width: 100%;
         padding: 10px 10px;
         background-color: whitesmoke;
+        font-weight: bolder;
+
         .price {
           margin-left: 20px;
         }
@@ -216,16 +237,18 @@
 
       .order-button {
         margin: 20px 30%;
-        width: 40%;
+        width: 60%;
       }
     }
   }
 }
+
 @media (min-width: 768px) {
   .menu {
     width: 80%;
   }
-} 
+}
+
 @media (min-width: 1024px) {
   .menu {
     margin-top: 15%;
@@ -242,7 +265,7 @@
         .order-summary {
           height: 70%;
           width: 30%;
-          margin-top: 30px;
+          margin-top: 70px;
           margin-left: 5%;
           @include element-shadow;
         }
@@ -250,6 +273,7 @@
     }
   }
 }
+
 
 @keyframes slideIn {
   0% {
@@ -261,6 +285,7 @@
     opacity: 1;
   }
 }
+
 @keyframes iconContainer {
   0% {
     transform: translateX(100%);
@@ -269,3 +294,4 @@
     transform: translateX(2%);
   }
 }
+
