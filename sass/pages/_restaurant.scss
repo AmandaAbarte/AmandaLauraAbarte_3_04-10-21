@@ -6,7 +6,7 @@
   width: 100%;
 
   &-container {
-    padding: 50px 0;
+    padding-top: 50px;
     width: 90%;
     max-width: 768px;
     margin: auto;
@@ -19,10 +19,6 @@
         fill: yellowgreen;
       }
     }
-
-
-
-
 
     .heart {
       background-color: black;
@@ -157,6 +153,9 @@
         .text {
           margin-left: 20px;
           width: 70%;
+          p {
+            margin-top: 10px;
+          }
         }
 
         .price {
@@ -164,9 +163,11 @@
           transform: translateX(100%);
           transition: all 1000ms linear;
         }
+
         &:hover .price {
           transform: translateX(0%);
         }
+        
         .icon-container {
           display: flex;
           justify-content: center;
@@ -204,6 +205,7 @@
 
       .title {
         border-bottom: 3px solid $primary-colour;
+        margin-bottom: 15px;
       }
 
       .item {
@@ -211,6 +213,8 @@
         flex-direction: row;
         justify-content: space-around;
         width: 100%;
+        margin: 10px 0;
+
         .price {
           margin-left: 20px;
         }
@@ -224,6 +228,7 @@
         padding: 10px 10px;
         background-color: whitesmoke;
         font-weight: bolder;
+
         .price {
           margin-left: 20px;
         }
@@ -236,11 +241,13 @@
     }
   }
 }
+
 @media (min-width: 768px) {
   .menu {
     width: 80%;
   }
 }
+
 @media (min-width: 1024px) {
   .menu {
     margin-top: 15%;
@@ -265,6 +272,7 @@
   }
 }
 
+
 @keyframes slideIn {
   0% {
     margin: 40px 0 20px;
@@ -275,6 +283,7 @@
     opacity: 1;
   }
 }
+
 @keyframes iconContainer {
   0% {
     transform: translateX(100%);

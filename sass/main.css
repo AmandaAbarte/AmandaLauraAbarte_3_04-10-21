@@ -193,7 +193,7 @@ nav i {
 }
 
 .menu-container {
-  padding: 50px 0;
+  padding-top: 50px;
   width: 90%;
   max-width: 768px;
   margin: auto;
@@ -370,6 +370,10 @@ nav i {
   width: 70%;
 }
 
+.menu-container .course .item .text p {
+  margin-top: 10px;
+}
+
 .menu-container .course .item .price {
   width: 10%;
   -webkit-transform: translateX(100%);
@@ -439,6 +443,7 @@ nav i {
 
 .menu-container .order-summary .title {
   border-bottom: 3px solid #9356DC;
+  margin-bottom: 15px;
 }
 
 .menu-container .order-summary .item {
@@ -452,6 +457,7 @@ nav i {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 100%;
+  margin: 10px 0;
 }
 
 .menu-container .order-summary .item .price {
