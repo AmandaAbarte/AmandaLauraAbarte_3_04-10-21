@@ -42,7 +42,6 @@ button:hover {
 }
 
 .loader-container {
-  display: none !important;
   position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -127,7 +126,7 @@ header {
   font-weight: bold;
 }
 
-header .locationselector {
+header .location-selector {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -141,7 +140,7 @@ header .locationselector {
   padding: 10px 0;
 }
 
-header .locationselector i {
+header .location-selector i {
   margin-right: 10px;
 }
 
@@ -232,86 +231,6 @@ footer .container ul li a i {
   width: 90%;
   max-width: 768px;
   margin: auto;
-}
-
-.menu-container .heart-one svg {
-  width: 50px;
-  height: 50px;
-  fill: yellowgreen;
-}
-
-.menu-container .heart {
-  background-color: black;
-  display: inline-block;
-  height: 30px;
-  margin: 0 10px;
-  position: relative;
-  top: 0;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  width: 30px;
-}
-
-.menu-container .heart:before {
-  content: "";
-  background-color: black;
-  border-radius: 50%;
-  height: 30px;
-  position: absolute;
-  width: 30px;
-  top: -15px;
-  left: 0;
-}
-
-.menu-container .heart:after {
-  content: "";
-  background-color: black;
-  border-radius: 50%;
-  height: 30px;
-  position: absolute;
-  width: 30px;
-  left: 15px;
-  top: 0;
-}
-
-.menu-container .heart-inner {
-  background-color: white;
-  display: inline-block;
-  height: 0px;
-  margin-left: 5px;
-  margin-top: -10px;
-  position: relative;
-  top: 5px;
-  border-radius: 15px 15px 0 0;
-  width: 0px;
-  z-index: 2;
-  -webkit-transition: all 500ms ease-in-out;
-  transition: all 500ms ease-in-out;
-}
-
-.menu-container .heart-inner:before {
-  content: "";
-  background-color: white;
-  border-radius: 50%;
-  height: 0px;
-  position: absolute;
-  width: 0px;
-  left: 10px;
-  top: 10px;
-  -webkit-transition: all 500ms ease-in-out;
-  transition: all 500ms ease-in-out;
-}
-
-.menu-container .heart:hover .heart-inner {
-  background: -webkit-linear-gradient(0deg, #FF79DA, #9356DC);
-  height: 30px;
-  width: 20px;
-}
-
-.menu-container .heart:hover .heart-inner:before {
-  background: -webkit-linear-gradient(0deg, #ca68db, #9356DC);
-  height: 20px;
-  width: 20px;
 }
 
 .menu-container .title {
